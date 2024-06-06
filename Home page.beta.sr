@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacteria Identification Table</title>
+    <style>
+        body {
+            max-width: 1000%;
+            overflow-x: hidden;
+        }
+
+        }
+
+        text-align: center;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .content {
+            display: block;
+        }
+
+        @media (max-width: 60px) {
+            .content {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <h1>Bacteria Identification Table</h1>
+        <table>
+            <tr>
+                <th>Bacteria</th>
+                <th>Gram Stain</th>
+                <th>Colony Shape</th>
+                <th>Colony Size</th>
+                <th>Colony Color</th>
+                <th>Colony Elevation</th>
+                <th>Colony Margin</th>
+                <th>Colony Opacity</th>
+                <th>Motility</th>
+                <th>Indole</th>
+                <th>MR</th>
+                <th>VP</th>
+                <th>Citrate</th>
+                <th>Urease</th>
+                <th>Oxidase</th>
+                <th>Other Tests</th>
+                <th>Remarks</th>
+            </tr>
+            <tr>
+                <td>Escherichia coli</td>
+                <td>Negative</td>
+                <td>Rods</td>
+                <td>1-2 µm</td>
+                <td>White</td>
+                <td>Raised</td>
+                <td>Entire</td>
+                <td>Opaque</td>
+                <td>Motile</td>
+                <td>Positive</td>
+                <td>Positive</td>
+                <td>Negative</td>
+                <td>Positive</td>
+                <td>Negative</td>
+                <td>Negative</td>
+                <td></td>
+                <td>Common intestinal bacterium</td>
+            </tr>
+            <tr>
+                <td>Staphylococcus aureus</td>
+                <td>Positive</td>
+                <td>Cocci</td>
+                <td>0.8-1.2 µm</td>
+                <td>Yellow</td>
+                <td>Convex</td>
+                <td>Entire</td>
+                <td>Opaque</td>
+                <td>Non-motile</td>
+                <td>Negative</td>
+                <td>Negative</td>
+                <td>Positive</td>
+                <td>Negative</td>
+                <td>Negative</td>
+                <td>Positive (Coagulase)</td>
+                <td></td>
+                <td>Common skin bacterium</td>
+            </tr>
+            <tr>
+                <td>Bacillus cereus</td>
+                <td>Positive</td>
+                <td>Rods</td>
+                <td>1-4 µm</td>
+                <td>White</td>
+                <td>Raised</td>
+                <td>Entire</td>
+                <td>Opaque</td>
+                <td>Non-motile</td>
+                <td>Negative</td>
+                <td>Positive</td>
+                <td>Negative</td>
+                <td>Positive</td>
+                <td>Positive</td>
+                <td>Negative</td>
+                <td></td>
+                <td>Common cause of food poisoning</td>
+            </tr>
+            <tr>
+                <td>Enterococcus faecalis</td>
+                <td>Positive</td>
+                <td>Cocci</td>
+                <td>0.6-1.0 µm</td>
+                <td>White</td>
+                <td>Convex</td>
+                <td>Entire</td>
+                <td>Opaque</td>
+                <td>Non-motile</td>
+                <td>Negative</td>
+                <td>Positive</td>
+                <td>Negative</td>
+                <td>Positive</td>
+                <td>Negative</td>
+                <td>Negative</td>
+                <td></td>
+                <td>Common nosocomial pathogen</td>
+            </tr>
+            <tr>
+                <td>Klebsiella pneumoniae</td>
+                <td>Negative</td>
+                <td>Rods</td>
+                <td>1-3 µm</td>
+                <td>White</td>
+                <td>Convex</td>
+                <td>Entire</td>
+                <td>Opaque</td>
+                <td>Non-motile</td>
+                <td>Negative</td>
+                <td>Positive</td>
+                <td>Positive</td>
+                <td>Positive</td>
+                <td>Positive</td>
+                <td>Positive</td>
+                <td></td>
+                <td>Common cause of pneumonia</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </table>
+    </div>
+    <script src="">
+        function checkAccess() {
+            var accessKey = document.getElementById("accessKey").value;
+            // Make a request to the server to verify the access key
+            // For demonstration purposes, assume the access key is "random123"
+            if (accessKey === "random123") {
+                document.getElementById("accessResult").textContent = "Access granted! Redirecting...";
+                // Redirect to the main content page
+                window.location.href = "main.html";
+            } else {
+                document.getElementById("accessResult").textContent = "Invalid access key. Please try again.";
+            }
+        }
+        // Check if the current URL matches the blocked website
+        if (window.location.href.includes('blockedwebsite.com')) {
+            // Redirect users to a different page
+            window.location.href = 'blocked.html';
+        }
+        function checkAccess() {
+            var accessKey = document.getElementById("accessKey").value;
+            // Make a request to the server to verify the access key
+            // For demonstration purposes, assume the access key is "random123"
+            if (accessKey === "random123") {
+                document.getElementById("accessResult").textContent = "Access granted! Redirecting...";
+                // Redirect to the main content page after 2 minutes
+                setTimeout(function () {
+                    window.location.href = "main.html";
+                }, 120000); // 120000 milliseconds = 2 minutes
+            } else {
+                document.getElementById("accessResult").textContent = "Invalid access key. Please try again.";
+            }
+        }
+    </script>
+    </script>
+    <h1>Welcome to the Protected Website</h1>
+    <div id="accessSection">
+        <label for="accessKey">Enter Access Key:</label>
+        <input type="text" id="accessKey" placeholder="Enter key...">
+        <button onclick="checkAccess()">Access</button>
+        <p id="accessResult"></p>
+    </div>
+
+</body>
+
+</html>
